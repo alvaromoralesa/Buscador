@@ -1,16 +1,10 @@
-video#vidFondo {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-    z-index: -100;
-    left: 0;
-    top: 0;
-    background-size: cover;
-
+body { 
+  background: url(../img/bgimage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
 .contenedor{
   background-color: rgba(242, 242, 242, 0.5);
   width: 80%;
@@ -142,4 +136,20 @@ video#vidFondo {
 }
 .card-action{
   text-align: right;
+}
+
+.loader {
+	display: block;
+	background: rgba(67, 117, 67, 0.31);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+.loader > .preloader-wrapper {
+	top: 50%;
+  left:50%;
 }
